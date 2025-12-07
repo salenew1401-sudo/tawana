@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Theme - T4Wr00T</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">T4Wr00T</div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="videos.html" class="nav-link" data-translate="nav-videos">Videos</a>
+                <a href="archive.html" class="nav-link" data-translate="nav-archive">Archive</a>
+                <a href="theme.html" class="nav-link active" data-translate="nav-theme">Get Theme</a>
+            </div>
+            <div class="nav-controls">
+                <button id="search-btn" class="control-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="language-selector">
+                    <button id="lang-en" class="lang-btn" data-lang="en" aria-label="English">
+                        🇬🇧
+                    </button>
+                    <button id="lang-fa" class="lang-btn" data-lang="fa" aria-label="Persian">
+                        🇮🇷
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." data-translate-placeholder="search-placeholder">
+            <button id="search-close" class="search-close" aria-label="Close search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+
+    <!-- Theme Section -->
+    <section class="section" style="margin-top: 5rem;">
+        <div class="container">
+            <h1 class="text-center mb-2" data-translate="theme-title">Get Theme</h1>
+            <p class="text-center text-secondary mb-4" data-translate="theme-subtitle" style="color: var(--text-secondary);">Download and customize your theme</p>
+            
+            <div class="grid grid-2">
+                <div class="card text-center">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <h3 class="card-title" data-translate="theme-download">Download Theme</h3>
+                    <p class="card-description">Get the complete theme package with all files and assets included.</p>
+                    <a href="#" class="btn-primary mt-2" style="margin: 1rem auto 0; display: inline-flex;">Download Now</a>
+                </div>
+                
+                <div class="card text-center">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <h3 class="card-title" data-translate="theme-preview">Preview</h3>
+                    <p class="card-description">View live demo and explore all features before downloading.</p>
+                    <a href="../index.html" class="btn-primary mt-2" style="margin: 1rem auto 0; display: inline-flex;">View Demo</a>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <h2 style="margin-bottom: 1rem;">Features</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                        ✅ <strong>Responsive Design</strong> - Works perfectly on all devices
+                    </li>
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                        ✅ <strong>Dark/Light Mode</strong> - Theme toggle with localStorage
+                    </li>
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                        ✅ <strong>Multi-language</strong> - English and Persian support with RTL
+                    </li>
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                        ✅ <strong>Search Functionality</strong> - Fast and intuitive search overlay
+                    </li>
+                    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                        ✅ <strong>Modern Design</strong> - Clean and professional aesthetics
+                    </li>
+                    <li style="padding: 0.75rem 0;">
+                        ✅ <strong>Easy Customization</strong> - Well-organized CSS variables
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card mt-4 text-center">
+                <h2 style="margin-bottom: 1rem;" data-translate="theme-docs">Documentation</h2>
+                <p class="card-description" style="margin-bottom: 1.5rem;">Learn how to customize and deploy your theme with our comprehensive documentation.</p>
+                <a href="https://github.com" class="btn-primary" style="margin: 0 auto; display: inline-flex;" target="_blank">View Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/language.js"></script>
+</body>
+</html>
