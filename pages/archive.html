@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - T4Wr00T</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">T4Wr00T</div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="videos.html" class="nav-link" data-translate="nav-videos">Videos</a>
+                <a href="archive.html" class="nav-link active" data-translate="nav-archive">Archive</a>
+                <a href="theme.html" class="nav-link" data-translate="nav-theme">Get Theme</a>
+            </div>
+            <div class="nav-controls">
+                <button id="search-btn" class="control-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="language-selector">
+                    <button id="lang-en" class="lang-btn" data-lang="en" aria-label="English">
+                        🇬🇧
+                    </button>
+                    <button id="lang-fa" class="lang-btn" data-lang="fa" aria-label="Persian">
+                        🇮🇷
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." data-translate-placeholder="search-placeholder">
+            <button id="search-close" class="search-close" aria-label="Close search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+
+    <!-- Archive Section -->
+    <section class="section" style="margin-top: 5rem;">
+        <div class="container">
+            <h1 class="text-center mb-2" data-translate="archive-title">Archive</h1>
+            <p class="text-center text-secondary mb-4" data-translate="archive-subtitle" style="color: var(--text-secondary);">Browse through all posts</p>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 class="card-title">Understanding Linux File System</h3>
+                    <p class="card-description">A comprehensive guide to navigating and understanding the Linux file system hierarchy.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">December 1, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Building REST APIs with Node.js</h3>
+                    <p class="card-description">Learn how to create robust and scalable REST APIs using Node.js and Express.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 28, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">CSS Grid vs Flexbox</h3>
+                    <p class="card-description">Understanding when to use CSS Grid and when to use Flexbox for modern layouts.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 25, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Introduction to Docker</h3>
+                    <p class="card-description">Get started with containerization using Docker for consistent development environments.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 20, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">JavaScript ES6+ Features</h3>
+                    <p class="card-description">Explore modern JavaScript features that make your code cleaner and more efficient.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 15, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Git Workflow Best Practices</h3>
+                    <p class="card-description">Master Git workflows for better team collaboration and version control.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 10, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Responsive Design Principles</h3>
+                    <p class="card-description">Create websites that work beautifully on all devices with responsive design.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 5, 2025</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Security Best Practices</h3>
+                    <p class="card-description">Essential security practices every developer should follow to protect their applications.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">November 1, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/language.js"></script>
+</body>
+</html>

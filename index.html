@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T4Wr00T - Digital Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">T4Wr00T</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active" data-translate="nav-home">Home</a>
+                <a href="pages/videos.html" class="nav-link" data-translate="nav-videos">Videos</a>
+                <a href="pages/archive.html" class="nav-link" data-translate="nav-archive">Archive</a>
+                <a href="pages/theme.html" class="nav-link" data-translate="nav-theme">Get Theme</a>
+            </div>
+            <div class="nav-controls">
+                <button id="search-btn" class="control-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="language-selector">
+                    <button id="lang-en" class="lang-btn" data-lang="en" aria-label="English">
+                        🇬🇧
+                    </button>
+                    <button id="lang-fa" class="lang-btn" data-lang="fa" aria-label="Persian">
+                        🇮🇷
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." data-translate-placeholder="search-placeholder">
+            <button id="search-close" class="search-close" aria-label="Close search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="https://raw.githubusercontent.com/TAwR00T/image/refs/heads/main/photo_2025-03-14_12-40-50%20(2).jpg" alt="Profile" loading="lazy">
+                </div>
+                <h1 class="hero-title" data-translate="hero-title">Hi! I'm Alex 👋</h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">A digital explorer, coder, and Linux advocate</p>
+                <a href="#contact" class="btn-primary" data-translate="hero-cta">Let's Work Together</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://coderon-jekyll.netlify.app/images/01.jpg" alt="Main visual" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html>
